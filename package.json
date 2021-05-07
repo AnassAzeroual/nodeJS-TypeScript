@@ -20,7 +20,5 @@
     "url": "https://github.com/AnassAzeroual/nodeJS-TypeScript/issues"
   },
   "homepage": "https://github.com/AnassAzeroual/nodeJS-TypeScript#readme",
-  "devDependencies": {
-    "typescript": "^4.2.4"
-  }
+  "devDependencies": {}
 }

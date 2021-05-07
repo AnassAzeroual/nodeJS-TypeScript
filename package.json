@@ -1,0 +1,26 @@
+{
+  "name": "nodeJS-TypeScript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "tsc app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnassAzeroual/nodeJS-TypeScript.git"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript"
+  ],
+  "author": "Anass Azeroual",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnassAzeroual/nodeJS-TypeScript/issues"
+  },
+  "homepage": "https://github.com/AnassAzeroual/nodeJS-TypeScript#readme",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}

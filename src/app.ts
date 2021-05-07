@@ -1,6 +1,10 @@
+import * as bodyParser from "body-parser";
 import express, { Application, Request, Response, NextFunction } from "express"
 
 const app: Application = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 
 const add = (a: number, b: number) => a + b;
 app.get('/', (req: Request, res: Response) => {

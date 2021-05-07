@@ -1,16 +1,13 @@
 import * as bodyParser from "body-parser";
 import express, { Application, Request, Response, NextFunction } from "express"
 
-const app: Application = express();
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+const router: Application = express();
+router.use(express.json());
+router.use(express.urlencoded({ extended: true }));
 
 
-const add = (a: number, b: number) => a + b;
-app.get('/', (req: Request, res: Response) => {
-    console.log(add(5, 6));
+router.use((req: Request, res: Response, next: NextFunction) => {
+    res.header('Acc')
+})
 
-    res.send('test get / 2020');
-});
-
-app.listen(5000, () => console.log('Server running'));
+router.listen(5000, () => console.log('Server running'));
